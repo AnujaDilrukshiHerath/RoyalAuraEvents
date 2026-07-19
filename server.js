@@ -153,8 +153,8 @@ app.get('/api/admin/data', (req, res) => {
   });
 });
 
-// Explicit Admin Route
-app.get('/admin', (req, res) => {
+// Explicit Admin Routes
+app.get(['/admin', '/admin.html'], (req, res) => {
   res.sendFile(path.join(__dirname, 'admin.html'));
 });
 
