@@ -192,19 +192,34 @@ document.addEventListener('DOMContentLoaded', () => {
       });
 
       if (allValid) {
-        // Mock successful submit
-        formSuccess.style.display = 'block';
-        inquiryForm.reset();
-        
-        // Reset floating label states by dispatching events
-        inquiryForm.querySelectorAll('input, textarea').forEach(elem => {
-          elem.dispatchEvent(new Event('change'));
+        const formData = {
+          name: document.getElementById('contact-name').value.trim(),
+          email: document.getElementById('contact-email').value.trim(),
+          phone: document.getElementById('contact-phone') ? document.getElementById('contact-phone').value.trim() : '',
+          message: document.getElementById('contact-message').value.trim()
+        };
+
+        fetch('/api/inquire', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(formData)
+        })
+        .then(res => res.json())
+        .then(data => {
+          if (data.success) {
+            formSuccess.style.display = 'block';
+            inquiryForm.reset();
+            inquiryForm.querySelectorAll('input, textarea').forEach(elem => {
+              elem.dispatchEvent(new Event('change'));
+            });
+            setTimeout(() => { updateBudget(); }, 100);
+          } else {
+            formError.style.display = 'block';
+          }
+        })
+        .catch(err => {
+          formError.style.display = 'block';
         });
-        
-        // Reset budget estimate range default label
-        setTimeout(() => {
-          updateBudget();
-        }, 100);
       } else {
         formError.style.display = 'block';
       }
