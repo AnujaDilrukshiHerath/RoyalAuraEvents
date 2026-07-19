@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Royal Aura Events | Luxury Event Planner UK</title>
+  <meta name="description" content="Royal Aura Events is the UK's premier luxury event planning agency. Specializing in bespoke weddings, elite corporate galas, and high-end private celebrations across London and the UK.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="main-header">
+    <div class="header-container">
+      <div class="logo-container">
+        <img src="RoyalAuraEvents.png" alt="Royal Aura Events Logo" class="nav-logo">
+      </div>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#calculator">Budget Estimator</a></li>
+          <li><a href="#venues">Venues</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle light and dark theme">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </button>
+        <a href="#contact" class="cta-btn cta-nav">Inquire</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-bg-overlay"></div>
+      <div class="hero-content">
+        <img src="RoyalAuraEvents.png" alt="Royal Aura Events Logo" class="hero-logo animate-fade-in">
+        <span class="hero-subtitle">Bespoke luxury event planners in the United Kingdom</span>
+        <h1 class="hero-title">Curators of Extraordinary Moments</h1>
+        <p class="hero-desc">We craft elite corporate galas, majestic weddings, and high-society private celebrations designed to inspire and captivate.</p>
+        <div class="hero-ctas">
+          <a href="#calculator" class="cta-primary">Estimate Event Budget</a>
+          <a href="#services" class="cta-secondary">Explore Services</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="subtitle">Bespoke Offerings</span>
+          <h2 class="section-title">Our Exclusive Planning Services</h2>
+          <div class="divider"></div>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">👑</div>
+            <h3>Royal Weddings</h3>
+            <p>From historic castle weddings to luxury estate banquets, we design breathtaking, romantic ceremonies tailored to perfection.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">💼</div>
+            <h3>Elite Corporate Galas</h3>
+            <p>High-end corporate dinners, product launches, and brand experiences that leave an unforgettable impression in the UK business world.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🥂</div>
+            <h3>Private Soirées</h3>
+            <p>Milestone birthdays, exclusive cocktails, and intimate gatherings executed with immaculate attention to detail.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">✈️</div>
+            <h3>Destination Events</h3>
+            <p>Flawless logistics, planning, and execution for premium luxury celebrations in the UK and overseas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Budget Calculator Section -->
+    <section id="calculator" class="calc-section">
+      <div class="container">
+        <div class="calc-grid">
+          <div class="calc-info">
+            <span class="subtitle">Bespoke Estimator</span>
+            <h2 class="section-title">Calculate Your Royal Aura Experience</h2>
+            <p>Get an instant, customized cost estimation for your event. Tailor your package and watch the preview update in real-time.</p>
+            
+            <div class="calc-feature-list">
+              <div class="calc-feature-item">
+                <span class="check-icon">✓</span>
+                <div>
+                  <strong>Exclusive Venues</strong>
+                  <p>Access to top-tier UK historic sites and modern skylines.</p>
+                </div>
+              </div>
+              <div class="calc-feature-item">
+                <span class="check-icon">✓</span>
+                <div>
+                  <strong>Premium Catering & Decor</strong>
+                  <p>Award-winning chefs and bespoke floral arrangements.</p>
+                </div>
+              </div>
+              <div class="calc-feature-item">
+                <span class="check-icon">✓</span>
+                <div>
+                  <strong>On-Site Coordination</strong>
+                  <p>Dedicated Royal Aura concierge managers from start to finish.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="calc-card">
+            <form id="budget-form">
+              <div class="form-group">
+                <label for="event-type">Event Type</label>
+                <select id="event-type" name="eventType">
+                  <option value="wedding" selected>Royal Wedding</option>
+                  <option value="corporate">Elite Corporate Gala</option>
+                  <option value="soiree">Private Soirée</option>
+                  <option value="destination">Destination Event</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="guest-range">Guest Count: <span id="guest-val">150</span> Guests</label>
+                <input type="range" id="guest-range" name="guestCount" min="20" max="500" step="10" value="150">
+              </div>
+
+              <div class="form-group">
+                <label for="tier-select">Experience Tier</label>
+                <select id="tier-select" name="tier">
+                  <option value="signature">Signature (High-End Luxury)</option>
+                  <option value="royal" selected>Royal (Ultra-Luxury & Bespoke)</option>
+                  <option value="monarch">Monarch Prestige (Limitless Luxury)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="event-duration">Duration</label>
+                <select id="event-duration" name="duration">
+                  <option value="1" selected>Single-Day Event</option>
+                  <option value="2">Two-Day Celebration</option>
+                  <option value="3">Three-Day Weekend Experience</option>
+                </select>
+              </div>
+
+              <div class="cost-summary">
+                <span class="summary-label">Estimated Budget</span>
+                <div class="price-container">
+                  <span class="currency">£</span>
+                  <span id="price-display" class="price-amount">45,000</span>
+                </div>
+                <p class="price-disclaimer">*This is a luxury estimate based on UK premium averages. Final quotes are bespoke.</p>
+              </div>
+
+              <a href="#contact" class="cta-primary full-width text-center">Reserve Date & Bespoke Quote</a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Venue Showcase Section -->
+    <section id="venues" class="venues-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="subtitle">Curated Partners</span>
+          <h2 class="section-title">Prestigious UK Venues</h2>
+          <div class="divider"></div>
+        </div>
+
+        <div class="venues-grid">
+          <div class="venue-card">
+            <div class="venue-img-wrapper">
+              <img src="assets/castle_venue.jpg" alt="Windsor Manor & Gardens" class="venue-img">
+            </div>
+            <div class="venue-content">
+              <span class="venue-tag">Historic Estate</span>
+              <h3>Windsor Manor & Gardens</h3>
+              <p class="venue-loc">Berkshire, United Kingdom</p>
+              <p>An exquisite, regal setting with sprawling landscaped gardens and historic stone facades perfect for majestic banquets.</p>
+            </div>
+          </div>
+
+          <div class="venue-card">
+            <div class="venue-img-wrapper">
+              <img src="assets/rooftop_venue.jpg" alt="The Obsidian Sky Lounge" class="venue-img">
+            </div>
+            <div class="venue-content">
+              <span class="venue-tag">Modern Skyline</span>
+              <h3>The Obsidian Sky Lounge</h3>
+              <p class="venue-loc">London, United Kingdom</p>
+              <p>A contemporary glass palace overlooking London's iconic skyline, perfect for high-impact corporate galas and premium networking.</p>
+            </div>
+          </div>
+
+          <div class="venue-card">
+            <div class="venue-img-wrapper">
+              <img src="assets/marquee_venue.jpg" alt="Cotswolds Glass Pavilion" class="venue-img">
+            </div>
+            <div class="venue-content">
+              <span class="venue-tag">Bespoke Pavilion</span>
+              <h3>Cotswolds Glass Pavilion</h3>
+              <p class="venue-loc">Cotswolds, United Kingdom</p>
+              <p>A transparent, architectural masterwork nestled in peaceful nature, providing natural light by day and starry skies by night.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="subtitle">Client Praise</span>
+          <h2 class="section-title">Kind Words From Elite Hosts</h2>
+          <div class="divider"></div>
+        </div>
+
+        <div class="carousel-container">
+          <div class="carousel-track-wrapper">
+            <div class="carousel-track" id="testimonial-track">
+              <!-- Slide 1 -->
+              <div class="carousel-slide active">
+                <p class="testimonial-text">"Royal Aura Events executed our anniversary gala flawlessly. Their attention to security, decorum, and custom styling was absolutely second to none in London."</p>
+                <h4 class="client-name">Lord & Lady Montgomery</h4>
+                <span class="client-title">Annual Charity Gala | Berkshire</span>
+              </div>
+              <!-- Slide 2 -->
+              <div class="carousel-slide">
+                <p class="testimonial-text">"The Windsor Castle celebration planned by Royal Aura was the talk of our partners for months. Absolute perfection, premium hospitality, and seamless organization."</p>
+                <h4 class="client-name">Alastair Vance</h4>
+                <span class="client-title">CEO, Sterling Holdings Group | London</span>
+              </div>
+              <!-- Slide 3 -->
+              <div class="carousel-slide">
+                <p class="testimonial-text">"Choosing Royal Aura Events was the best decision we made. From the marquee setup to the five-star culinary curation, every single guest was completely wowed."</p>
+                <h4 class="client-name">Dr. Sophia Patel</h4>
+                <span class="client-title">Private Wedding Celebration | Cotswolds</span>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-nav">
+            <button id="prev-testimonial" aria-label="Previous Testimonial">←</button>
+            <div class="carousel-dots" id="carousel-dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+            <button id="next-testimonial" aria-label="Next Testimonial">→</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Inquiry Form -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <span class="subtitle">Get In Touch</span>
+            <h2 class="section-title">Let's Create Royal Events Together</h2>
+            <p>Contact our concierge team to schedule a private consultation. Whether you are hosting a gala in London or a wedding in the countryside, we bring your vision to life.</p>
+            
+            <div class="contact-details">
+              <p><strong>Email:</strong> concierge@royalauraevents.co.uk</p>
+              <p><strong>Phone:</strong> +44 (0) 20 7946 0958</p>
+              <p><strong>Location:</strong> Mayfair, London, United Kingdom</p>
+              <p><strong>Website:</strong> <a href="https://royalauraevents.co.uk" target="_blank" rel="noopener">royalauraevents.co.uk</a></p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <form id="inquiry-form" novalidate>
+              <div class="input-group">
+                <input type="text" id="contact-name" name="name" required placeholder=" ">
+                <label for="contact-name">Full Name</label>
+                <span class="error-msg">Please enter your name.</span>
+              </div>
+              
+              <div class="input-group">
+                <input type="email" id="contact-email" name="email" required placeholder=" ">
+                <label for="contact-email">Email Address</label>
+                <span class="error-msg">Please enter a valid email address.</span>
+              </div>
+
+              <div class="input-group">
+                <input type="tel" id="contact-phone" name="phone" placeholder=" ">
+                <label for="contact-phone">Phone Number (Optional)</label>
+              </div>
+
+              <div class="input-group">
+                <textarea id="contact-message" name="message" required placeholder=" " rows="4"></textarea>
+                <label for="contact-message">Tell Us About Your Event</label>
+                <span class="error-msg">Please enter details about your event.</span>
+              </div>
+
+              <button type="submit" class="cta-primary full-width">Send Private Inquiry</button>
+              
+              <div id="form-success" class="form-feedback success">Thank you! Your request has been received. Our concierge will contact you within 24 hours.</div>
+              <div id="form-error" class="form-feedback error">Something went wrong. Please check the fields and try again.</div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <img src="RoyalAuraEvents.png" alt="Royal Aura Events Logo" class="footer-logo">
+        <p>Prestige event planning and management across the United Kingdom. Creating lasting memories with royal elegance.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#calculator">Budget Estimator</a></li>
+          <li><a href="#venues">Venues</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Royal Aura Events Ltd. All rights reserved. <a href="https://royalauraevents.co.uk" target="_blank" rel="noopener">royalauraevents.co.uk</a></p>
+    </div>
+  </footer>
+
+  <!-- JS Logic -->
+  <script src="app.js"></script>
+</body>
+</html>
