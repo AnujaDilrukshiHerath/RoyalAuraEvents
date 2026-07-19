@@ -45,10 +45,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Config mapping
   const costConfig = {
-    wedding: { base: 15000, perGuest: 120 },
-    corporate: { base: 12000, perGuest: 90 },
-    soiree: { base: 5000, perGuest: 80 },
-    destination: { base: 20000, perGuest: 150 }
+    'tamil-wedding': { base: 18000, perGuest: 110 },
+    'sinhala-poruwa': { base: 16000, perGuest: 105 },
+    'saree-function': { base: 7000, perGuest: 75 },
+    'cultural-gala': { base: 14000, perGuest: 95 }
   };
 
   const tierMultipliers = {
